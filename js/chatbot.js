@@ -1,7 +1,7 @@
 // Enhanced chatbot functionality with integrated knowledge base
 class AquaGuardChatbot {
   constructor() {
-    this.apiKey = 'AIzaSyCUpaSRhj1V0gjgAR5TpuX_RagFJhUYJD4';
+    this.apiKey = 'enter youar api key';
     this.apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
     this.conversationHistory = [];
     this.waterTips = null;
