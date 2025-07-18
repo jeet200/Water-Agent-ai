@@ -1,0 +1,218 @@
+{
+  "modules": [
+    {
+      "id": "water-treatment",
+      "title": "Home Water Treatment Methods",
+      "content": {
+        "overview": "Simple methods to ensure safe drinking water at home",
+        "methods": [
+          {
+            "name": "Boiling",
+            "description": "Boil water for 1 minute (3 minutes at high altitudes)",
+            "effectiveness": "Kills all pathogens",
+            "cost": "Low",
+            "suitable_for": "Small quantities"
+          },
+          {
+            "name": "Chlorination",
+            "description": "Add 2 drops of bleach per liter, wait 30 minutes",
+            "effectiveness": "Kills most pathogens",
+            "cost": "Very low",
+            "suitable_for": "Large quantities"
+          },
+          {
+            "name": "Solar Disinfection (SODIS)",
+            "description": "Clear bottles in sun for 6 hours",
+            "effectiveness": "Good for clear water",
+            "cost": "Free",
+            "suitable_for": "Emergency situations"
+          },
+          {
+            "name": "Water Filters",
+            "description": "Ceramic, carbon, or membrane filters",
+            "effectiveness": "Varies by type",
+            "cost": "Medium to high",
+            "suitable_for": "Daily use"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hygiene-practices",
+      "title": "Essential Hygiene Practices",
+      "content": {
+        "critical_times": [
+          "Before eating or preparing food",
+          "After using the toilet",
+          "After handling garbage",
+          "After touching animals",
+          "When hands are visibly dirty",
+          "After coughing or sneezing"
+        ],
+        "proper_technique": {
+          "steps": [
+            "Wet hands with clean water",
+            "Apply enough soap to cover all surfaces",
+            "Rub hands palm to palm",
+            "Clean between fingers",
+            "Clean backs of hands",
+            "Clean thumbs",
+            "Clean fingernails",
+            "Rinse with clean water",
+            "Dry with clean towel or air dry"
+          ],
+          "duration": "20 seconds minimum"
+        }
+      }
+    },
+    {
+      "id": "toilet-sanitation",
+      "title": "Toilet Sanitation Best Practices",
+      "content": {
+        "maintenance": [
+          "Clean toilet daily with disinfectant",
+          "Keep toilet brush clean and dry",
+          "Ensure proper ventilation",
+          "Fix leaks immediately",
+          "Keep toilet paper and soap available",
+          "Use toilet lid to prevent aerosols"
+        ],
+        "safe_disposal": {
+          "septic_systems": "Pump every 3-5 years",
+          "pit_latrines": "Maintain 30m distance from water sources",
+          "sewage_connection": "Report blockages immediately"
+        }
+      }
+    },
+    {
+      "id": "waste-management",
+      "title": "Household Waste Management",
+      "content": {
+        "categories": {
+          "organic": {
+            "examples": "Food scraps, garden waste",
+            "disposal": "Composting or biogas",
+            "benefits": "Creates fertilizer, reduces landfill"
+          },
+          "recyclable": {
+            "examples": "Paper, plastic, glass, metal",
+            "disposal": "Separate collection or recycling centers",
+            "benefits": "Conserves resources, reduces pollution"
+          },
+          "hazardous": {
+            "examples": "Batteries, chemicals, medicines",
+            "disposal": "Special collection points",
+            "benefits": "Prevents water and soil contamination"
+          },
+          "general": {
+            "examples": "Non-recyclable items",
+            "disposal": "Municipal collection",
+            "benefits": "Keeps environment clean"
+          }
+        }
+      }
+    },
+    {
+      "id": "water-source-protection",
+      "title": "Protecting Water Sources",
+      "content": {
+        "contamination_sources": [
+          "Human and animal waste",
+          "Agricultural runoff",
+          "Industrial discharge",
+          "Household chemicals",
+          "Solid waste dumping"
+        ],
+        "protection_measures": [
+          "Maintain safe distances from contamination sources",
+          "Build proper drainage around wells",
+          "Cover water sources",
+          "Regular testing and monitoring",
+          "Community awareness programs",
+          "Proper waste disposal systems"
+        ]
+      }
+    },
+    {
+      "id": "menstrual-hygiene",
+      "title": "Menstrual Hygiene Management",
+      "content": {
+        "safe_practices": [
+          "Change pads/tampons every 4-6 hours",
+          "Wash hands before and after changing",
+          "Use clean, dry storage for supplies",
+          "Dispose properly in bins, not toilets",
+          "Consider reusable options like cups",
+          "Maintain personal hygiene during periods"
+        ],
+        "disposal_methods": {
+          "urban": "Wrap and dispose in designated bins",
+          "rural": "Burn or bury in designated pits",
+          "reusable": "Wash thoroughly and dry in sun"
+        }
+      }
+    },
+    {
+      "id": "food-hygiene",
+      "title": "Food Safety and Hygiene",
+      "content": {
+        "key_principles": [
+          "Keep clean - wash hands and surfaces often",
+          "Separate raw and cooked foods",
+          "Cook thoroughly to safe temperatures",
+          "Keep food at safe temperatures",
+          "Use safe water and raw materials"
+        ],
+        "storage_guidelines": {
+          "refrigerated": "Below 5°C for perishables",
+          "frozen": "-18°C or below",
+          "dry_goods": "Cool, dry place away from pests",
+          "leftovers": "Consume within 2-3 days"
+        }
+      }
+    },
+    {
+      "id": "community-sanitation",
+      "title": "Community Sanitation Initiatives",
+      "content": {
+        "collective_actions": [
+          "Organize cleanup drives",
+          "Maintain public toilets",
+          "Create waste segregation systems",
+          "Educate children in schools",
+          "Monitor water quality together",
+          "Report sanitation issues to authorities"
+        ],
+        "benefits": {
+          "health": "Reduced disease transmission",
+          "economic": "Lower healthcare costs",
+          "environmental": "Cleaner surroundings",
+          "social": "Improved quality of life"
+        }
+      }
+    }
+  ],
+  "emergency_guidelines": {
+    "water_shortage": [
+      "Prioritize drinking and cooking water",
+      "Reuse greywater for non-drinking purposes",
+      "Collect rainwater if available",
+      "Reduce bathing frequency",
+      "Use disposable plates to save dishwashing water"
+    ],
+    "contamination_outbreak": [
+      "Boil all water before use",
+      "Avoid raw foods",
+      "Increase handwashing frequency",
+      "Report to health authorities",
+      "Follow official guidelines"
+    ],
+    "natural_disasters": [
+      "Store emergency water (4L per person per day)",
+      "Know location of clean water sources",
+      "Have water purification tablets ready",
+      "Maintain first aid supplies",
+      "Create family emergency plan"
+    ]
+  }
+}
