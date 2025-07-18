@@ -9,8 +9,8 @@ const Chatbot = ({ utils }) => {
   const [showSuggestions, setShowSuggestions] = useState(true);
   const messagesEndRef = useRef(null);
 
-  const apiKey = 'AIzaSyCUpaSRhj1V0gjgAR5TpuX_RagFJhUYJD4';
-  const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
+  // Using secure API route instead of direct API calls
+  const apiUrl = '/api/gemini';
 
   const suggestions = [
     { text: "💧 How much water does a shower use?", icon: "🚿" },
@@ -164,30 +164,12 @@ const Chatbot = ({ utils }) => {
     
     Keep responses concise (2-3 sentences), practical, and motivational.`;
 
-    const requestBody = {
-      contents: [{
-        parts: [{
-          text: `${systemContext}\n\nUser question: ${message}\n\nProvide a helpful, specific response about water conservation or sanitation.`
-        }]
-      }],
-      generationConfig: {
-        temperature: 0.7,
-        topK: 40,
-        topP: 0.95,
-        maxOutputTokens: 512,
-      },
-      safetySettings: [
-        { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-        { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-        { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-        { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_MEDIUM_AND_ABOVE" }
-      ]
-    };
+    const prompt = `${systemContext}\n\nUser question: ${message}\n\nProvide a helpful, specific response about water conservation or sanitation.`;
 
-    const response = await fetch(`${apiUrl}?key=${apiKey}`, {
+    const response = await fetch(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(requestBody)
+      body: JSON.stringify({ prompt })
     });
 
     if (!response.ok) {
@@ -196,8 +178,8 @@ const Chatbot = ({ utils }) => {
 
     const data = await response.json();
     
-    if (data.candidates && data.candidates[0] && data.candidates[0].content) {
-      return data.candidates[0].content.parts[0].text;
+    if (data.response) {
+      return data.response;
     } else {
       throw new Error('Invalid response format');
     }

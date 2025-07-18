@@ -74,11 +74,28 @@ AquaGuard is an AI-powered Progressive Web App (PWA) designed to promote water c
 ## 🔧 Configuration
 
 ### API Setup
-1. **Google Gemini API**:
-   - Get API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Replace the API key in `js/chatbot.js`:
-   ```javascript
-   this.apiKey = 'YOUR_GEMINI_API_KEY_HERE';
+
+#### For Vercel Deployment (Recommended)
+1. **Get Google Gemini API Key**:
+   - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+   - Create a new API key
+
+2. **Set Environment Variable in Vercel**:
+   - Go to your Vercel project dashboard
+   - Navigate to Settings → Environment Variables
+   - Add new variable:
+     - **Name**: `GEMINI_API_KEY`
+     - **Value**: Your actual API key
+     - **Environments**: Production, Preview, Development
+
+3. **Deploy**:
+   - API calls are now handled securely through `/api/gemini` endpoint
+   - API key is never exposed to client-side code
+
+#### For Local Development
+1. Create `.env.local` file in project root:
+   ```
+   GEMINI_API_KEY=your_api_key_here
    ```
 
 2. **Offline Fallback**:

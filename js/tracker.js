@@ -1,3 +1,5 @@
+// Water usage tracker functionality - API calls handled through /api/gemini route
+
 // Water usage tracker functionality
 class WaterTracker {
   constructor() {
