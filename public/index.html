@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0077be" />
+    <meta
+      name="description"
+      content="AquaGuard - AI-powered water conservation and sanitation awareness app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>AquaGuard - Water & Sanitation Assistant</title>
+    
+    <!-- Meta tags for PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="AquaGuard">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="#0077be">
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AquaGuard - Water Conservation App">
+    <meta property="og:description" content="AI-powered assistant for water conservation and sanitation awareness">
+    <meta property="og:image" content="%PUBLIC_URL%/logo512.png">
+    <meta property="og:url" content="https://aquaguard.app">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AquaGuard - Water Conservation App">
+    <meta name="twitter:description" content="AI-powered assistant for water conservation and sanitation awareness">
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo512.png">
+    
+    <!-- Preload important resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Loading screen -->
+    <div id="loading-screen" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0077be, #00a8cc);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      color: white;
+      font-family: system-ui, -apple-system, sans-serif;
+    ">
+      <div style="font-size: 64px; margin-bottom: 20px;">💧</div>
+      <h1 style="font-size: 28px; margin-bottom: 10px;">AquaGuard</h1>
+      <p style="opacity: 0.9;">Loading your water conservation assistant...</p>
+      <div style="
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(255,255,255,0.3);
+        border-top: 3px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-top: 20px;
+      "></div>
+    </div>
+    
+    <script>
+      // Hide loading screen when React app loads
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const loadingScreen = document.getElementById('loading-screen');
+          if (loadingScreen) {
+            loadingScreen.style.opacity = '0';
+            loadingScreen.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+              loadingScreen.remove();
+            }, 500);
+          }
+        }, 1000);
+      });
+      
+      // Add spin animation
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      `;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html> 

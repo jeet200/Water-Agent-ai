@@ -1,0 +1,130 @@
+{
+  "tips": [
+    {
+      "category": "bathroom",
+      "tips": [
+        "Take 5-minute showers instead of baths to save up to 50 liters",
+        "Turn off the tap while brushing teeth - saves 6 liters per minute",
+        "Fix dripping taps immediately - a drip wastes 20 liters per day",
+        "Install low-flow showerheads to reduce water use by 40%",
+        "Collect cold shower water while waiting for hot water",
+        "Use dual-flush toilets appropriately",
+        "Don't use the toilet as a wastebasket"
+      ]
+    },
+    {
+      "category": "kitchen",
+      "tips": [
+        "Wash vegetables in a bowl instead of under running water",
+        "Reuse vegetable washing water for plants",
+        "Run dishwashers only when full",
+        "Scrape dishes instead of rinsing before loading dishwasher",
+        "Defrost food in the refrigerator overnight",
+        "Use minimal water when cooking",
+        "Keep a pitcher of water in the fridge instead of running tap"
+      ]
+    },
+    {
+      "category": "laundry",
+      "tips": [
+        "Run washing machines only with full loads",
+        "Use appropriate water level settings",
+        "Wash clothes in cold water when possible",
+        "Reuse towels when possible",
+        "Consider hand-washing small items",
+        "Upgrade to water-efficient washing machines",
+        "Pre-treat stains to avoid re-washing"
+      ]
+    },
+    {
+      "category": "outdoor",
+      "tips": [
+        "Water plants early morning or late evening",
+        "Use drip irrigation for gardens",
+        "Collect rainwater for outdoor use",
+        "Use a broom instead of hose to clean driveways",
+        "Cover pools to reduce evaporation",
+        "Use mulch around plants to retain moisture",
+        "Choose drought-resistant plants"
+      ]
+    },
+    {
+      "category": "general",
+      "tips": [
+        "Monitor your water bill for unusual usage",
+        "Educate family members about water conservation",
+        "Report water waste when you see it",
+        "Use water-saving devices and fixtures",
+        "Regular maintenance prevents water waste",
+        "Every drop counts - small changes make big differences",
+        "Share water-saving tips with neighbors"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "fact": "The average person uses about 150 liters of water daily",
+      "impact": "Reducing usage by 20% saves 30 liters per day"
+    },
+    {
+      "fact": "A running tap wastes 6 liters per minute",
+      "impact": "Turning off taps while not in use saves thousands of liters yearly"
+    },
+    {
+      "fact": "Toilets account for 30% of household water use",
+      "impact": "Dual-flush toilets can reduce this by 50%"
+    },
+    {
+      "fact": "A 10-minute shower uses about 90 liters",
+      "impact": "Reducing to 5 minutes saves 45 liters per shower"
+    },
+    {
+      "fact": "Washing machines use 50-100 liters per load",
+      "impact": "Full loads maximize water efficiency"
+    },
+    {
+      "fact": "Leaky taps can waste 20,000 liters per year",
+      "impact": "Fixing leaks immediately prevents massive waste"
+    },
+    {
+      "fact": "Dishwashers use less water than hand washing",
+      "impact": "Modern dishwashers use only 10-15 liters per cycle"
+    },
+    {
+      "fact": "Gardens can use up to 1000 liters per hour with sprinklers",
+      "impact": "Drip irrigation reduces this by 70%"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "5-Minute Shower Challenge",
+      "description": "Reduce your shower time to 5 minutes for a week",
+      "savings": "315 liters per week",
+      "difficulty": "easy"
+    },
+    {
+      "title": "No-Tap Tuesday",
+      "description": "Turn off taps completely while soaping, brushing, or scrubbing",
+      "savings": "50 liters per day",
+      "difficulty": "easy"
+    },
+    {
+      "title": "Full Load Friday",
+      "description": "Run washing machines and dishwashers only with full loads",
+      "savings": "100 liters per week",
+      "difficulty": "medium"
+    },
+    {
+      "title": "Leak Detective",
+      "description": "Check all taps, toilets, and pipes for leaks and fix them",
+      "savings": "Up to 140 liters per week",
+      "difficulty": "medium"
+    },
+    {
+      "title": "Greywater Warrior",
+      "description": "Reuse safe greywater for plants or cleaning for a month",
+      "savings": "200 liters per week",
+      "difficulty": "hard"
+    }
+  ]
+} 

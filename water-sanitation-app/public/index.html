@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0077be" />
+    <meta name="description" content="AquaGuard - AI-powered water conservation and sanitation awareness platform aligned with SDG 6" />
+    <meta name="keywords" content="water conservation, sanitation, SDG 6, water saving, AI chatbot, sustainability" />
+    <meta name="author" content="AquaGuard Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aquaguard.example.com/" />
+    <meta property="og:title" content="AquaGuard - Save Water, Save Life" />
+    <meta property="og:description" content="AI-powered water conservation and sanitation awareness platform" />
+    <meta property="og:image" content="https://aquaguard.example.com/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://aquaguard.example.com/" />
+    <meta property="twitter:title" content="AquaGuard - Save Water, Save Life" />
+    <meta property="twitter:description" content="AI-powered water conservation and sanitation awareness platform" />
+    <meta property="twitter:image" content="https://aquaguard.example.com/twitter-image.jpg" />
+    
+    <!-- PWA -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';" />
+    
+    <title>AquaGuard - Save Water, Save Life</title>
+    
+    <style>
+        /* Critical CSS for loading screen */
+        .loading-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #e2e8f0;
+            border-top: 4px solid #0077be;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            font-size: 1.2rem;
+            color: #4a5568;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .loading-subtext {
+            font-size: 0.9rem;
+            color: #718096;
+            text-align: center;
+        }
+        
+        .loading-logo {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 4px 6px rgba(0, 119, 190, 0.3));
+        }
+        
+        .loading-features {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .loading-feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #4a5568;
+            backdrop-filter: blur(10px);
+        }
+        
+        /* Hide loading screen after React loads */
+        .app-loaded .loading-screen {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .loading-logo {
+                font-size: 2.5rem;
+            }
+            
+            .loading-text {
+                font-size: 1.1rem;
+            }
+            
+            .loading-features {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        <div style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            text-align: center;
+            padding: 20px;
+        ">
+            <div style="font-size: 3rem; margin-bottom: 20px;">💧</div>
+            <h1 style="color: #1a202c; margin-bottom: 10px;">AquaGuard</h1>
+            <p style="color: #4a5568; margin-bottom: 20px;">You need to enable JavaScript to run this app.</p>
+            <div style="
+                padding: 15px 25px;
+                background: rgba(244, 67, 54, 0.1);
+                border: 1px solid #f44336;
+                border-radius: 8px;
+                color: #d32f2f;
+                max-width: 400px;
+            ">
+                <strong>JavaScript Required:</strong> This application requires JavaScript to function properly. 
+                Please enable JavaScript in your browser settings and refresh the page.
+            </div>
+        </div>
+    </noscript>
+    
+    <!-- Loading screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-logo">💧</div>
+        <div class="loading-text">AquaGuard</div>
+        <div class="loading-subtext">Loading your water conservation platform...</div>
+        <div class="loading-spinner"></div>
+        <div class="loading-features">
+            <div class="loading-feature">
+                <span>🤖</span>
+                <span>AI Assistant</span>
+            </div>
+            <div class="loading-feature">
+                <span>📊</span>
+                <span>Usage Tracker</span>
+            </div>
+            <div class="loading-feature">
+                <span>🎯</span>
+                <span>Eco Goals</span>
+            </div>
+            <div class="loading-feature">
+                <span>📚</span>
+                <span>Education</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- React root -->
+    <div id="root"></div>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        // Hide loading screen once React loads
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const loadingScreen = document.getElementById('loading-screen');
+                if (loadingScreen) {
+                    loadingScreen.style.opacity = '0';
+                    loadingScreen.style.transition = 'opacity 0.5s ease';
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                    }, 500);
+                }
+            }, 1000);
+        });
+        
+        // Service Worker registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(function(registration) {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+        
+        // PWA install prompt
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Show install button/banner
+            const installButton = document.createElement('button');
+            installButton.textContent = '📱 Install AquaGuard';
+            installButton.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #0077be, #00a8cc);
+                color: white;
+                border: none;
+                padding: 12px 20px;
+                border-radius: 25px;
+                font-weight: 600;
+                cursor: pointer;
+                box-shadow: 0 4px 12px rgba(0, 119, 190, 0.3);
+                z-index: 1000;
+                transition: transform 0.2s ease;
+            `;
+            
+            installButton.addEventListener('mouseenter', () => {
+                installButton.style.transform = 'translateY(-2px)';
+            });
+            
+            installButton.addEventListener('mouseleave', () => {
+                installButton.style.transform = 'translateY(0)';
+            });
+            
+            installButton.addEventListener('click', () => {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    }
+                    deferredPrompt = null;
+                    document.body.removeChild(installButton);
+                });
+            });
+            
+            document.body.appendChild(installButton);
+        });
+        
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            if ('performance' in window) {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                console.log('Page load time:', perfData.loadEventEnd - perfData.fetchStart, 'ms');
+            }
+        });
+    </script>
+</body>
+</html> 

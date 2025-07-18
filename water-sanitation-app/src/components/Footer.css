@@ -1,0 +1,266 @@
+/* Footer Styles */
+.footer {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  color: white;
+  padding: 60px 0 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #a0aec0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-logo .logo-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 168, 204, 0.5));
+}
+
+.footer-logo .logo-text {
+  background: linear-gradient(135deg, var(--secondary-color), #5eb3d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-description {
+  color: #a0aec0;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.footer-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-stat {
+  text-align: center;
+}
+
+.footer-stat .stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.footer-stat .stat-label {
+  font-size: 0.8rem;
+  color: #a0aec0;
+}
+
+.quick-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quick-tip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.quick-tip .tip-icon {
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #4a5568;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-info p {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.sdg-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links a {
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-section:first-child {
+    text-align: center;
+  }
+
+  .footer-stats {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-info {
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 0 15px;
+  }
+
+  .footer-content {
+    gap: 25px;
+  }
+
+  .footer-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+
+  .footer-logo .logo-icon {
+    font-size: 1.7rem;
+  }
+
+  .footer-description {
+    font-size: 0.9rem;
+  }
+
+  .footer-stats {
+    gap: 20px;
+  }
+
+  .footer-stat .stat-number {
+    font-size: 1.3rem;
+  }
+
+  .footer-stat .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .quick-tips {
+    gap: 12px;
+  }
+
+  .quick-tip {
+    font-size: 0.85rem;
+  }
+
+  .quick-tip .tip-icon {
+    font-size: 1.1rem;
+  }
+
+  .footer-bottom {
+    gap: 12px;
+  }
+
+  .footer-info p {
+    font-size: 0.85rem;
+  }
+
+  .sdg-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  .footer-links {
+    gap: 15px;
+  }
+
+  .footer-links a {
+    font-size: 0.85rem;
+  }
+} 

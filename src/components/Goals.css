@@ -1,0 +1,227 @@
+/* Goals Styles */
+.goals-container h2 {
+  color: #0077be;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.goals-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 119, 190, 0.1);
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0077be;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 5px;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666666;
+}
+
+.goal-item {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.goal-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 119, 190, 0.1);
+}
+
+.goal-checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  accent-color: #0077be;
+}
+
+.goal-content {
+  flex: 1;
+}
+
+.goal-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.goal-description {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.goal-progress {
+  width: 100%;
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+.progress-bar:hover {
+  background-color: #45a049;
+}
+
+.goal-points {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5eb3d6;
+}
+
+.goal-item.completed {
+  opacity: 0.7;
+  background-color: #e8f5e9;
+}
+
+.goal-item.completed .goal-title {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.goal-item.completed .progress-bar {
+  background-color: #4caf50;
+  cursor: default;
+}
+
+.add-goal-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px dashed #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.add-goal-section:hover {
+  border-color: #0077be;
+  background-color: #f0f8ff;
+}
+
+.add-goal-section h3 {
+  margin-bottom: 15px;
+  color: #0077be;
+}
+
+.goal-select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.goal-select:focus {
+  outline: none;
+  border-color: #0077be;
+}
+
+.add-goal-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-goal-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.add-goal-button:active {
+  transform: translateY(0);
+}
+
+.add-goal-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .goals-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .stat-card {
+    padding: 15px;
+  }
+  
+  .stat-number {
+    font-size: 24px;
+  }
+  
+  .goal-item {
+    padding: 12px;
+    gap: 10px;
+  }
+  
+  .goal-item:hover {
+    transform: translateX(3px);
+  }
+  
+  .goal-checkbox {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .goal-points {
+    font-size: 16px;
+  }
+} 

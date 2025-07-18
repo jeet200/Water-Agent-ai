@@ -1,0 +1,116 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "Hand Hygiene Basics",
+      "description": "Learn proper handwashing techniques and importance",
+      "icon": "🧼",
+      "duration": "5 min",
+      "content": "Proper handwashing is one of the most effective ways to prevent disease transmission. Wash hands for at least 20 seconds with soap and clean water.",
+      "keyPoints": [
+        "Wash hands for at least 20 seconds",
+        "Use soap and clean running water",
+        "Wash before eating and after using toilet",
+        "Dry hands with clean towel"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Safe Water Storage",
+      "description": "Best practices for storing drinking water safely",
+      "icon": "🚰",
+      "duration": "7 min",
+      "content": "Proper water storage prevents contamination and ensures safe drinking water. Use covered containers and clean them regularly.",
+      "keyPoints": [
+        "Use covered containers",
+        "Clean storage containers monthly",
+        "Keep water in cool, dark place",
+        "Don't store water in metal containers"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Toilet Hygiene",
+      "description": "Maintaining clean and safe toilet facilities",
+      "icon": "🚽",
+      "duration": "6 min",
+      "content": "Clean toilets prevent the spread of diseases and ensure a healthy environment. Regular cleaning and proper ventilation are essential.",
+      "keyPoints": [
+        "Clean toilet bowl regularly",
+        "Ensure proper ventilation",
+        "Use toilet paper properly",
+        "Maintain septic system"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Kitchen Sanitation",
+      "description": "Food safety and kitchen hygiene practices",
+      "icon": "🍽️",
+      "duration": "8 min",
+      "content": "Kitchen sanitation prevents foodborne illnesses. Keep surfaces clean, store food properly, and maintain good personal hygiene while cooking.",
+      "keyPoints": [
+        "Clean surfaces before and after cooking",
+        "Store food at proper temperatures",
+        "Separate raw and cooked foods",
+        "Wash fruits and vegetables"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Waste Management",
+      "description": "Proper disposal of household waste",
+      "icon": "🗑️",
+      "duration": "6 min",
+      "content": "Proper waste management prevents contamination of water sources and reduces health risks. Separate, store, and dispose of waste correctly.",
+      "keyPoints": [
+        "Separate organic and inorganic waste",
+        "Use covered bins",
+        "Dispose of waste regularly",
+        "Don't dump waste in water bodies"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Personal Hygiene",
+      "description": "Daily hygiene practices for health",
+      "icon": "🧴",
+      "duration": "5 min",
+      "content": "Personal hygiene maintains health and prevents disease. Regular bathing, dental care, and clean clothes are essential.",
+      "keyPoints": [
+        "Bathe regularly with soap",
+        "Brush teeth twice daily",
+        "Wear clean clothes",
+        "Keep nails short and clean"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Water Treatment",
+      "description": "Methods to purify water for drinking",
+      "icon": "💧",
+      "duration": "10 min",
+      "content": "Water treatment ensures safe drinking water. Boiling, filtration, and chemical treatment are common methods to purify water.",
+      "keyPoints": [
+        "Boil water for at least 1 minute",
+        "Use water purification tablets",
+        "Filter water through clean cloth",
+        "Store treated water properly"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Community Sanitation",
+      "description": "Maintaining clean community spaces",
+      "icon": "🏘️",
+      "duration": "7 min",
+      "content": "Community sanitation requires collective effort. Keep public spaces clean, maintain drainage systems, and promote hygiene awareness.",
+      "keyPoints": [
+        "Keep public spaces clean",
+        "Maintain proper drainage",
+        "Educate community members",
+        "Report sanitation issues"
+      ]
+    }
+  ]
+} 

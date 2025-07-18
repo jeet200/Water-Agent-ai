@@ -1,0 +1,112 @@
+{
+  "tips": [
+    {
+      "id": 1,
+      "category": "bathroom",
+      "title": "Shorter Showers",
+      "description": "Take 5-minute showers instead of 10-minute ones",
+      "savings": "45L per shower",
+      "difficulty": "easy",
+      "icon": "🚿"
+    },
+    {
+      "id": 2,
+      "category": "bathroom",
+      "title": "Turn Off Tap While Brushing",
+      "description": "Don't let water run while brushing teeth",
+      "savings": "12L daily",
+      "difficulty": "easy",
+      "icon": "🦷"
+    },
+    {
+      "id": 3,
+      "category": "kitchen",
+      "title": "Use Basin for Dishes",
+      "description": "Fill a basin with soapy water instead of running tap",
+      "savings": "15L per wash",
+      "difficulty": "easy",
+      "icon": "🍽️"
+    },
+    {
+      "id": 4,
+      "category": "laundry",
+      "title": "Full Load Washing",
+      "description": "Only run washing machine with full loads",
+      "savings": "25L per wash",
+      "difficulty": "easy",
+      "icon": "👕"
+    },
+    {
+      "id": 5,
+      "category": "garden",
+      "title": "Water Early Morning",
+      "description": "Water plants in early morning to reduce evaporation",
+      "savings": "30L weekly",
+      "difficulty": "easy",
+      "icon": "🌱"
+    },
+    {
+      "id": 6,
+      "category": "maintenance",
+      "title": "Fix Leaky Faucets",
+      "description": "Repair dripping taps immediately",
+      "savings": "20L daily",
+      "difficulty": "medium",
+      "icon": "🔧"
+    },
+    {
+      "id": 7,
+      "category": "bathroom",
+      "title": "Install Low-Flow Showerhead",
+      "description": "Replace regular showerheads with low-flow models",
+      "savings": "30% reduction",
+      "difficulty": "medium",
+      "icon": "🚿"
+    },
+    {
+      "id": 8,
+      "category": "bathroom",
+      "title": "Dual-Flush Toilet",
+      "description": "Install dual-flush toilet or retrofit existing one",
+      "savings": "30% reduction",
+      "difficulty": "hard",
+      "icon": "🚽"
+    },
+    {
+      "id": 9,
+      "category": "garden",
+      "title": "Collect Rainwater",
+      "description": "Set up rainwater collection system",
+      "savings": "100L monthly",
+      "difficulty": "medium",
+      "icon": "🌧️"
+    },
+    {
+      "id": 10,
+      "category": "kitchen",
+      "title": "Keep Drinking Water Cool",
+      "description": "Store water in refrigerator instead of running tap",
+      "savings": "8L daily",
+      "difficulty": "easy",
+      "icon": "🧊"
+    },
+    {
+      "id": 11,
+      "category": "garden",
+      "title": "Use Mulch",
+      "description": "Apply mulch around plants to retain moisture",
+      "savings": "70% evaporation reduction",
+      "difficulty": "easy",
+      "icon": "🌿"
+    },
+    {
+      "id": 12,
+      "category": "general",
+      "title": "Monitor Water Meter",
+      "description": "Check water meter regularly for leaks",
+      "savings": "Variable",
+      "difficulty": "easy",
+      "icon": "📊"
+    }
+  ]
+} 
